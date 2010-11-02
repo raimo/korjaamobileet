@@ -10,7 +10,8 @@ set :deploy_to, "/home/users/raimo/#{application}"
 set :group_writable, false
 
 set :pid, "#{current_path}/tmp/pids/unicorn.pid"
-set :cmd, "(cd #{current_path} && unicorn_rails -D -E production -c config/unicorn.rb)"
+set :bundle, "(cd #{current_path} && bundle check || bundle install)"
+set :cmd, "(cd #{current_path} && unicorn -D -E production -c config/unicorn.rb)"
 
 role :app, "kirsikka.kapsi.fi"
 role :web, "kirsikka.kapsi.fi"
@@ -22,11 +23,11 @@ namespace :deploy do
   end
 
   task :restart do
-    run("(test -s '#{pid}' && kill -USR2 `cat '#{pid}'`) || #{cmd}")
+    run("#{bundle} && (test -s '#{pid}' && kill -USR2 `cat '#{pid}'`) || #{cmd}")
   end
 
   task :start do
-    run("(test -s '#{pid}' && kill -0 `cat '#{pid}'`) || #{cmd}")
+    run("#{bundle} && (test -s '#{pid}' && kill -0 `cat '#{pid}'`) || #{cmd}")
   end
 end
 

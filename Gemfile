@@ -12,5 +12,6 @@ gem 'capistrano'
 gem 'pg'
 gem 'haml'
 gem 'koala'
+gem 'unicorn'
 
 gem 'failurous-rails', :git => 'git://github.com/railsrumble/rr10-team-256.git'
