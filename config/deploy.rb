@@ -9,9 +9,9 @@ set :use_sudo, false
 set :deploy_to, "/home/users/raimo/#{application}"
 set :group_writable, false
 
-set :pid, "#{current_path}/tmp/pids/unicorn.pid"
+set :pid, "#{current_path}/tmp/pids/passenger.31010.pid"
 set :bundle, "(cd #{current_path} && bundle check || bundle install)"
-set :cmd, "(cd #{current_path} && unicorn -D -E production -c config/unicorn.rb)"
+set :cmd, "(cd #{current_path} && bundle exec passenger start -d -p 31010 -e production)"
 
 role :app, "kirsikka.kapsi.fi"
 role :web, "kirsikka.kapsi.fi"
