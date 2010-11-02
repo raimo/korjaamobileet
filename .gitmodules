@@ -1,0 +1,3 @@
+[submodule "vendor/plugins/is_approvable"]
+	path = vendor/plugins/is_approvable
+	url = git://github.com/raimo-t/is_approvable.git
