@@ -23,11 +23,11 @@ namespace :deploy do
   end
 
   task :restart do
-    run("#{bundle} && (test -s '#{pid}' && kill -USR2 `cat '#{pid}'`) || #{cmd}")
+    run("#{bundle} && touch #{current_path}/tmp/restart.txt")
   end
 
   task :start do
-    run("#{bundle} && (test -s '#{pid}' && kill -0 `cat '#{pid}'`) || #{cmd}")
+    run("#{bundle} && (test -s '#{pid}' && kill `cat '#{pid}'`) || #{cmd}")
   end
 end
 
