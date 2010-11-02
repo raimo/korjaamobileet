@@ -1,0 +1,126 @@
+--- 
+fi: 
+  HotLink: linkki
+  NewsItem: uutinen
+  activerecord: 
+    errors: 
+      full_messages: 
+        format: "%{attribute} %{message}"
+      messages: 
+        accepted: "on hyväksyttävä"
+        blank: "ei voi olla tyhjä"
+        confirmation: "ei vastaa vahvistusta"
+        empty: "ei voi olla tyhjä"
+        equal_to: "täytyy olla %{count}"
+        even: "täytyy olla parillinen"
+        exclusion: "on varattu"
+        greater_than: "on oltava suurempi kuin %{count}"
+        greater_than_or_equal_to: "on oltava suurempi tai yhtä suuri kuin %{count}"
+        inclusion: "ei luettelossa"
+        invalid: "ei kelpaa"
+        less_than: "on oltava pienempi kuin %{count}"
+        less_than_or_equal_to: "on oltava pienempi tai yhtä suuri kuin %{count}"
+        not_a_number: "ei ole numero"
+        odd: "on oltava pariton"
+        record_invalid: "Validointi epäonnistui: %{errors}"
+        taken: "on jo otettu"
+        too_long: "on liian pitkä (maksimi on %{count} merkkiä)"
+        too_short: "on liian lyhyt (minimi on %{count} merkkiä)"
+        wrong_length: "on väärä pituus (pitäisi olla %{count} merkkiä)"
+      template: 
+        body: "Ongelmia oli seuraavissa kentissä:"
+        header: 
+          one: "1 virhe esti %{model}-tietueen tallennuksen"
+          other: "%{count} virhettä estivät tämän %{model}-tietueen tallennuksen"
+  click: klikkaa
+  create: luo
+  date: 
+    formats: 
+      default: "%d.%m.%Y"
+      long: "%B %d, %Y"
+      short: "%b %d"
+  datetime: 
+    distance_in_words: 
+      about_x_hours: 
+        one: "noin 1 tunti"
+        other: "noin %{count} tuntia"
+      about_x_months: 
+        one: "noin 1 kuukausi"
+        other: "noin %{count} kuukautta"
+      about_x_years: 
+        one: "noin 1 vuosi"
+        other: "noin %{count} vuotta"
+      almost_x_years: 
+        one: "lähes 1 vuosi"
+        other: "lähes %{count} vuotta"
+      half_a_minute: "puoli minuuttia"
+      less_than_x_minutes: 
+        one: "alle minuutti"
+        other: "alle %{count} minuuttia"
+      less_than_x_seconds: 
+        one: "alle 1 sekunti"
+        other: "alle %{count} sekuntia"
+      over_x_years: 
+        one: "yli 1 vuosi"
+        other: "yli %{count} vuotta"
+      x_days: 
+        one: "1 päivä"
+        other: "%{count} päivää"
+      x_minutes: 
+        one: "1 minuutti"
+        other: "%{count} minuuttia"
+      x_months: 
+        one: "1 kuukausi"
+        other: "%{count} kuukautta"
+      x_seconds: 
+        one: "1 sekunti"
+        other: "%{count} sekuntia"
+    prompts: 
+      day: Päivä
+      hour: Tunti
+      minute: Minuutti
+      month: Kuukausi
+      second: Sekunnit
+      year: Vuosi
+  edit: muokkaa
+  error: Virhe
+  hello: "Hei maailma"
+  hot_links: linkit
+  new: uusi
+  news_items: uutiset
+  notice: Ilmoitus
+  number: 
+    currency: 
+      format: 
+        delimiter: " "
+        format: "%n %u"
+        separator: ","
+        unit: €
+    format: 
+      delimiter: " "
+      separator: ","
+    human: 
+      storage_units: 
+        format: "%n %u"
+        units: 
+          byte: 
+            one: tavu
+            other: tavua
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+  support: 
+    array: 
+      last_word_connector: ja
+      two_words_connector: ja
+      words_connector: ","
+    select: 
+      prompt: Valitse
+  time: 
+    am: am
+    formats: 
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: pm

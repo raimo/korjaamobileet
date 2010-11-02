@@ -1,0 +1,36 @@
+<div id="left">
+  <%= render :partial => 'news_items/index' %>
+</div>
+
+  <div id="center">
+    <h2>Korjaamobileet - korjaa.mobi/leet</h2>
+    <div class="text"><img src="images/img1.jpg" width="129" height="81"
+    class="img" alt=""  /><span class="color">Korjaamo on baari <%= random_of(:ajatteleville, :ailahteleville) %> informaatioyhteiskunnan <%= random_of 'sieluille', 'taiteilijoille' %> </span> 
+    Tutustu sen <%= random_of 'ystävälliseen', 'ymmärtävään', :rohkeaan, :vaateliaaseen %> kävijäkuntaan, josta voit löytää sielunkumppanisi silloin kun sitä vähiten odotat...</div>
+    <!-- <div class="read"><a href="#"><img src="images/but_read.gif" alt="" /></a></div> -->
+    <div class="text">
+      <img src="images/img2.jpg" width="129" height="81" class="img" alt=""  />
+      <span class="color">Informaatioverkkoyhteiskunnan peilikuva </span> 
+      Korjaamo-<%= random_of :ravintola, :baari %> heijastaa nykyisen vahvasti <%= random_of :baareihin, :tietoverkkoihin %> siirtyneen maailman <%= random_of :teknologista, 'hektistä', 'maailmojasyleilevää' %> kehitystä. Baarista voit löytää <%= random_of 'Applen tietokoneita', 'satunnaisia tietokoneita', 'myös päätteitä' %>, joista Korjaamon asiakkaat voivat halutessaan tarkistaa <%= random_of 'sähköpostinsa', 'Internet-statuksensa' %>...    </div>
+    <!-- <div class="read"><a href="#"><img src="images/but_read.gif" alt="" /></a></div> -->
+    <h2 id="about">Sivujen alkuperä</h2>
+    <div class="text"><span class="color">Vain <%= random_of 'satunnainen', 'hetken', 'tilapäinen', 'ajaton' %> 
+        <%= random_of 'päähänpisto', 'mielijohde', 'yhteensattuma' %></span> 
+      Näiden sivujen <%= random_of 'ylläpitäjä', 'sisällöntuottaja', 'tekijä', 'valmistaja' %> <%= random_of 'innostui', 'kiinnostui', 'tuli uteliaaksi', 'kuuli', 'sai tietää' %> Korjaamosta <%= random_of 'jo', 'vasta', 'vuoden 2010', 'alunperin', 'taannoin' %> helmikuun lopulla. Tällöin käynti Korjaamolla oli lyhyt, mutta sitäkin <%= random_of 'palkitsevampi', 'hienompi', 'inspiroivampi' %> kokemus. <%= random_of 'Nämä sivut ovat', 'Tämä sivu on', 'Sivut ovat', 'Katsomasi sivut ovat' %> tuon vierailun seurauksena <%= random_of 'lyhyestä mielijohteesta', 'pikaisesti', 'äkkiä', 'tuota pikaa' %> <%= random_of 'kehittynyt', 'syntynyt', 'valmistunut' %> <%= random_of 'fanituotos', 'taideteos', 'pala taidetta' %>. Sivujen tarkoitus on tarjota tietoa positiivista kokemuksista yhdessä Taka-Töölön eksoottisimmista juomaravintoloista. </div>
+    <!-- <div class="read"><a href="#"><img src="images/but_read.gif" alt="" /></a></div>
+    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=korjaamo&amp;sll=60.171531,24.927635&amp;sspn=0.02489,0.084543&amp;ie=UTF8&amp;hq=korjaamo&amp;hnear=&amp;ll=60.189969,24.924374&amp;spn=0,359.915457&amp;t=h&amp;z=14&amp;iwloc=A&amp;layer=c&amp;cbll=60.183769,24.920164&amp;panoid=PHFcigXVEbg-LPOAB9ckAA&amp;cbp=12,6.45,,0,2.26&amp;cid=2124171828634678829&amp;output=svembed"></iframe>
+    -->
+  </div>
+  <div class="right">
+    <%= render :partial => 'hot_links/index' %>
+  </div>
+  <div class="right">
+    <h1 id="taxi">Taksi</h1>
+    <div class="tit_bot">
+      <ul>
+        <li><span class="tax_loc">Taksi Helsinki:</span> 0100 0700</li>
+        <li><span class="tax_loc">Lähitaksi:</span> 0100 7300</li>
+        <li><span class="tax_loc">Lähin lähitaksi:</span> 0100 7301</li>
+      </ul>
+    </div>
+  </div>

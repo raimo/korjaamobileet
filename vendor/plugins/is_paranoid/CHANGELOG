@@ -1,0 +1,43 @@
+This will only document major changes.  Please see the commit log for minor changes.
+
+-2009-09-25
+* fixing bug with has_many :through not respecting is_paranoid conditions (thanks, Ben Johnson)
+
+-2009-09-18
+* making is_paranoid play nice with habtm relationships
+
+-2009-09-17
+* fixed when primary key was not "id" (ie: "uuid") via Thibaud Guillaume-Gentil
+
+-2009-09-15
+* added support for has_many associations (i.e. @r2d2.components_with_destroyed) via Amiel Martin
+
+-2009-06-13
+* added support for is_paranoid conditions being maintained on preloaded associations
+* destroy and restore now return self (to be more in keeping with other ActiveRecord methods) via Brent Dillingham
+
+-2009-05-19
+* added support for specifying relationships to restore via instance_model.restore(:include => [:parent_1, :child_1, :child_2]), etc.
+* method_missing is no longer overridden on instances provided you declare your custom method_missing *before* specifying the model is_paranoid
+
+-2009-05-12
+* added support for parent_with_destroyed methods
+
+-2009-04-27
+* restoring models now cascades to child dependent => destroy models via Matt Todd
+
+-2009-04-22
+* destroying and restoring records no longer triggers saving/updating callbacks
+
+-2009-03-28
+* removing syntax for calculation require (all find and ActiveRecord calculations are done on-the-fly now via method_missing)
+* adding ability to specify alternate fields and values for destroyed objects
+* adding in support for _destroyed_only methods (with inspiration from David Krmpotic)
+* adding init.rb via David Krmpotic
+* adding jewler tasks via Scott Woods
+
+-2009-03-24
+* requiring specific syntax to include calculations
+
+-2009-03-21
+* initial release

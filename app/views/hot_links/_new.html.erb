@@ -1,0 +1,9 @@
+<div class="element">
+  <% form_for(@hot_link) do |f| %>
+    <span> <%= f.text_field :title %> </span>
+    <span> <%= f.text_field :url %> </span>
+    <%= f.text_field :email, :class => 'hidden' %>
+    <%= submit_tag('Lisää', :class => 'submit') %>
+    <%= link_to('Peruuta', '', :class => 'cancel') %>
+  <% end %>
+</div>

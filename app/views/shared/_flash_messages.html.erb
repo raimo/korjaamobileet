@@ -1,0 +1,9 @@
+<% [:error, :notice].each do |msg_type| %>
+  <% if flash[msg_type] %>
+    <script language="javascript">
+      $(document).ready(function() {
+	$.jGrowl("<%= flash[msg_type] %>", { header : "<%= I18n.t(msg_type) %>"});
+      });
+    </script>
+  <% end %>
+<% end %>

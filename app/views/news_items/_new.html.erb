@@ -1,0 +1,16 @@
+<div class="element">
+  <% form_for(@news_item) do |f| %>
+    <span class="date"> <%= f.text_field :when %> </span>
+    <span>  <%= f.text_field :title %> </span>
+    <p> <%= f.text_area :body, :rows => 5 %> </p>
+    <%= f.text_field :email, :class => 'hidden' %>
+    <%= submit_tag('Julkaise', :class => 'submit') %>
+    <%= link_to('Unohda', '', :class => 'cancel') %>
+  <% end %>
+</div>
+
+<script language="javascript">
+  $(document).ready(function() {
+    $('#news_item_when').datepick();
+  });
+</script>

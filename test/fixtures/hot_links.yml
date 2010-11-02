@@ -1,0 +1,16 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: Google
+  url: 'http://google.fi'
+  approved: true
+
+two:
+  title: Amazon
+  url: 'http://www.amazon.com/tasks'
+  approved: true
+
+new:
+  title: Potentially malicious
+  url: 'http://www.amazon.fi/tasks'
+  approved: false

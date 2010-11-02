@@ -1,0 +1,2 @@
+module HotLinksHelper
+end

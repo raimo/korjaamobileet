@@ -1,0 +1,10 @@
+<li class="element<%= ' today' if hot_link.today? %>"> 
+
+  <%= link_to hot_link.title, hot_link.url, :id => "hot_link_#{hot_link.id}" %> <span class="clicked">(<%= hot_link.clicked %> krt)</span>
+
+  <script language="javascript">
+    $(document).ready(function() {
+      $('#<%= "hot_link_#{hot_link.id}" %>').count_clicks({url : '<%= click_hot_link_path(hot_link) %>'});
+    });
+  </script>
+</li>

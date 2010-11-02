@@ -1,0 +1,11 @@
+<h1 id="news">Uutiset</h1>
+<div class="list">
+  <div class="elements">
+    <%= render :partial => 'news_items/news_item', :collection => @news_items %>
+  </div>
+  <div class="add_form">
+  </div>
+  <div class="controls">
+    <%= link_to 'Lisää uutinen', new_news_item_path, :class => 'add' %>
+  </div>
+</div>
