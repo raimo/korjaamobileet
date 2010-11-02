@@ -27,7 +27,7 @@ namespace :deploy do
   end
 
   task :start do
-    run("#{bundle} && (test -s '#{pid}' && kill `cat '#{pid}'`) || #{cmd}")
+    run("#{bundle} && (test -s '#{pid}' && kill -0 `cat '#{pid}'`) || #{cmd}")
   end
 end
 
