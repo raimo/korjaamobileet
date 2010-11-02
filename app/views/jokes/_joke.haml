@@ -1,0 +1,14 @@
+.joke-item
+  .image.vote-circle
+  .comment-count
+    ="(<span class='comment-points-field'>#{joke.points}p</span>: <span class='comment-count-field'>#{joke.comments.count}</span>)".html_safe
+
+  -lines = joke.body.strip.gsub(/\n\s*/, "\n").split("\n")
+  -if lines.size == 1
+    .double-line
+      =link_to(short_body(lines.first), joke)
+
+  -else
+    -lines[0..1].map do |line|
+      .line
+        =link_to(short_body(line), joke)

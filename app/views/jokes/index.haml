@@ -1,0 +1,16 @@
+
+
+#joke-container.radius.shadow
+  = render :partial => 'hotlist'
+
+.clear
+.controls
+  .button
+    = link_to 'Tell A Joke!', new_joke_path
+  .button
+    -if session[:user]
+      = link_to "Log out #{session[:user]['preferredUsername']}", delete_sessions_path, :class => 'twoline'
+    -else
+      = link_to 'Log in with Facebook / OpenID', new_session_path, :class => 'twoline'
+  .button
+    = link_to 'Hall of Fame', tellers_path

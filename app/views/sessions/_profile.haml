@@ -1,0 +1,7 @@
+#logged-from-facebook
+  You are logged in as 
+  = current_teller
+  through Facebook
+
+.image
+  =image_tag("http://graph.facebook.com/#{session[:user]['identifier']}/picture")

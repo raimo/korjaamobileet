@@ -1,0 +1,14 @@
+= form_for(new, :url => joke_comments_path(@joke)) do |f|
+  .field
+    Author:
+    = current_teller
+  .field
+    = f.text_area :body, :rows => 3, :cols => 100, :placeholder => 'Write your comment here', :class => 'comment-area'
+  .clear
+  = f.submit('Send', :class => 'button half')
+
+
+%script
+  $('textarea').maxlength( {maxCharacters: 255} );
+  $('input[placeholder],textarea[placeholder]').placeholder();
+=render :partial => 'shared/flash_messages'

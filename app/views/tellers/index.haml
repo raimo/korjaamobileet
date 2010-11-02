@@ -1,0 +1,12 @@
+#joke-container.shadow.radius
+  .jokes-title
+    %h1
+      =@title = 'The Hall of Fame of Joke Tellers'
+  .joke-body
+    .teller-list
+      = render :partial => 'teller', :collection => @tellers
+
+.clear
+.controls
+  .button.cancel
+    = link_to 'Back', root_path

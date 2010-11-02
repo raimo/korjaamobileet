@@ -1,4 +1,11 @@
+$.ajaxSetup({
+  cache: false
+});
+
 $(document).ready(function(){
+
+  $('textarea').autogrow();
+  $('input[placeholder],textarea[placeholder]').placeholder();
 
   $(".razd_but").click(function () {
     $($(this).attr('href')).parent().effect("highlight", { }, 6000);
@@ -102,3 +109,5 @@ $(document).ready(function(){
     });
   };
 })(jQuery);
+
+

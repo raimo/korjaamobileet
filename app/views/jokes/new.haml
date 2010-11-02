@@ -1,0 +1,21 @@
+= form_for(@joke) do |f|
+  #joke-container.radius.shadow
+    - if @joke.errors.any?
+      #error_explanation
+        %ul
+          - @joke.errors.each do |field, error|
+            %li
+              =field
+              =error
+
+    .field
+      Author:
+      %strong
+        = current_teller
+    .field
+      = f.text_area :body, :rows => 3, :cols => 100, :placeholder => 'Write your joke here'
+    .clear
+  .controls
+    = f.submit('Send', :class => 'button half')
+    .button.cancel.half
+      = link_to('Back', root_path)

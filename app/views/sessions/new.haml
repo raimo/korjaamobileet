@@ -1,0 +1,17 @@
+#joke-container.radius.shadow
+  .jokes-title
+    %h1
+      Facebook and OpenID Login
+  .description
+    You can log in using OpenID below or with Facebook button on the bottom left corner.
+  %iframe{ :src => "http://tellajoke.rpxnow.com/openid/embed?token_url=#{ RAILS_ENV=='production' ? 'http%3A%2F%2Ftellajoke.r10.railsrumble.com%2Fsessions' : 'http%3A%2F%2Flocalhost:3000%2Fsessions' }",
+           :scrolling => "no",
+           :frameBorder => "no",
+           :allowtransparency => "true",
+           :style => "width:1000px;height:240px;margin-top:60px;" }
+.clear
+.controls
+  .button.half
+    =link_to('Facebook login', @facebook_url)
+  .button.cancel.half
+    = link_to('Back', :back)

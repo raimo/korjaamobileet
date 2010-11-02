@@ -1,0 +1,9 @@
+- [:error, :notice].each do |msg_type|
+  - if flash[msg_type]
+    %script
+      $(document).ready(function() { $.jGrowl(
+      = "'#{flash[msg_type]}'"
+      , { life: 8000, header :
+      'Notice'
+      }); });
+
