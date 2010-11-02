@@ -1,12 +1,12 @@
 set :application, "korjaamobileet"
-set :repository,  "svn+ssh://rtuisku@kekkonen.cs.hut.fi/u/9/rtuisku/csvn/korjaamobileet"
+set :repository,  "git://github.com/raimo-t/korjaamobileet.git"
+set :scm, :git
 
 default_run_options[:pty] = true
-set :deploy_via, :export
+set :deploy_via, :remote_cache
 set :use_sudo, false
 set :deploy_to, "/home/users/raimo/#{application}"
 set :group_writable, false
-set :remote_cache, true
 
 set :pid, "#{current_path}/tmp/pids/unicorn.pid"
 set :cmd, "(cd #{current_path} && unicorn_rails -D -E production -c config/unicorn.rb)"
