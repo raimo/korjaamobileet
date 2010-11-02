@@ -1,4 +1,5 @@
 class JokesController < ApplicationController
+  layout 'tellajoke'
 
   def index
     fetch_hotlist

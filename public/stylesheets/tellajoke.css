@@ -1,0 +1,390 @@
+textarea {
+  height: 338px;
+  width: 100%;
+  font-size: 14pt;
+  border: none;
+}
+
+textarea.comment-area {
+  height: 30px;
+  font-size: 10pt;
+  border: 1px solid black;
+}
+
+div {
+/*  border: 1px solid red;
+ */
+}
+
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  max-width: 1024px;
+}
+
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo img {
+  border: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+}
+
+#joke-container {
+/*  min-height: 410px;
+ *  */
+  min-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 0;
+  border: 1px solid black;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.jokes-title {
+  background: blue;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+.jokes-title h1 {
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  font-size: medium;
+  text-align: center;
+}
+
+.joke-list {
+  float: left;
+  width: 49%;
+  padding: 0;
+  padding-left: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.joke-title {
+  height: 42px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2px;
+}
+.joke-item {
+  height: 42px;
+}
+.joke-item:hover {
+  cursor: pointer;
+}
+.joke-list .joke-item:hover a {
+  display:block;
+  height: 30px;
+  color: red !important;
+  outline: none;
+}
+.joke-item .image {
+  background-image: url(/images/circle.png);
+  height: 42px;
+  width: 42px;
+  float:left;
+}
+.joke-item .image:hover {
+  background-image: url(/images/circle_yellow.png);
+  cursor: pointer;
+}
+.joke-item a, .joke-list .joke-item a:visited {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+.joke-item a:hover {
+  text-decoration: none;
+  color: #710070;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.clear {
+  clear: both;
+}
+
+.controls {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  max-width: 1024px;
+  padding-top: 15px;
+  height: 180px;
+  overflow:hidden;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: white;
+}
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+      border: none;
+}
+
+.controls .button {
+  width: 200px;
+  height: 110px;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -moz-box-shadow: 15px 15px 15px #aaa;
+  -webkit-box-shadow: 15px 15px 15px #aaa;
+  box-shadow: 15px 15px 15px #aaa;
+  border: 5px inset;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  font-size: 15pt;
+  float: left;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.button:active {
+  border: 5px outset;
+}
+
+.controls .button:hover, .controls .button:active {
+  -moz-box-shadow: 15px 15px 15px #666;
+  -webkit-box-shadow: 15px 15px 15px #666;
+  box-shadow: 15px 15px 15px #666;
+
+  position:relative;
+  top:0;
+  left:0;
+  width: 200px;
+  height: 110px;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  background-color: blue;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  font-size: 15pt;
+  outline: none;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+.controls .cancel, .controls .cancel:active, .controls .cancel:hover {
+  background-color: gray;
+  height: 100px;
+}
+
+.controls .button:active, .controls .button a:active {
+  -moz-box-shadow:inset 0 0 5px #555;
+  -webkit-box-shadow:inset 0 0 5px #555;
+  box-shadow:inset 0 0 5px #555;
+  outline: none;
+}
+
+.line {
+  height: 40%;
+}
+.double-line {
+  padding-top: 8px;
+  height: 40%;
+}
+
+.joke-body {
+  padding: 50px 15px 10px 40px;
+}
+.joke-body p {
+  padding: 0;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  font-size: 14pt;
+}
+
+
+.controls .button a.twoline, .controls .button input.twoline {
+  padding-top: 28px;
+}
+
+.controls .button a, .controls .button input {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15pt;
+  display:block;
+  padding-top: 40px;
+  margin-bottom: -40px;
+  outline: none;
+  width: 100%;
+  height: 80px;
+}
+
+
+/* tooltip styling */
+.tooltip {
+  display:none;
+  background:url(/images/tooltip.png);
+  padding:4px 3px 1px 3px;
+  height:20px;
+  width:82px;
+  font-size:11px;
+  color:#fff;
+  border: 1px solid black;
+}
+
+/* a .label element inside tooltip */
+.tooltip .label {
+  color:yellow;
+  width:35px;
+  font-weight:bold;
+}
+
+.tooltip a {
+  color:#ad4;
+  font-size:11px;
+  font-weight:bold;
+}
+
+
+/*match placeholder/watermark padding to border+padding for input element*/
+label.placeholder {
+  cursor: text;
+  padding: 4px 4px 4px 4px;
+  color: #999999;
+  font-size: 14pt;
+}
+/* html5 placeholder support */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color:#999999;
+}
+input:placeholder, textarea:placeholder {
+  color:#999999;
+}
+
+.teller-row .position {
+  width: 30px;
+  height: 30px;
+  float:left;
+  font-size: 12pt;
+  text-align: right;
+  margin-right: 5px;
+  padding-right: 10px;
+}
+.teller-row .name {
+  width: 800px;
+  height: 30px;
+  float:left;
+  font-size: 12pt;
+}
+.teller-row .points {
+  font-size: 12pt;
+  height: 30px;
+  width: 50px;
+  float:right;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.radius {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+.shadow {
+  -moz-box-shadow: 15px 15px 15px #aaa;
+  -webkit-box-shadow: 15px 15px 15px #aaa;
+}
+
+.comment-count {
+  color: gray;
+  float: right;
+  padding-bottom:15px;
+}
+.comment-points-field {
+  font-weight: bold;
+}
+.comment-count-field {
+  color: #333;
+}
+
+.comments .comment {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  min-height: 60px;
+  border: 2px outset;
+  -moz-box-shadow: 15px 2px 15px #aaa;
+  -webkit-box-shadow: 15px 2px 15px #aaa;
+}
+
+.comment .author {
+  text-indent: 3em;
+  margin-top: 20px;
+}
+
+.comments input, .comments .button {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -moz-box-shadow: 5px 5px 5px #aaa;
+  -webkit-box-shadow: 5px 5px 5px #aaa;
+  box-shadow: 5px 5px 5px #aaa;
+  border: 2px inset;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  font-size: 8pt;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.comments .button:active, .comments input:active {
+  border: 5px outset;
+}
+
+.comments input:hover, .comments input:active, .comments .button:hover, .comments .button:active {
+  text-decoration: none;
+  -moz-box-shadow: 5px 5px 5px #666;
+  -webkit-box-shadow: 5px 5px 5px #666;
+  box-shadow: 5px 5px 5px #666;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  background-color: blue;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  font-size: 8pt;
+  outline: none;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+.comments .show-new-comment {
+  height: 30px;
+}
+
+.description {
+  padding: 33px 31px 9px 39px;
+  color: gray;
+}
+
+.joke-author {
+  font-weight:bold;
+  margin:30px -10px 0 1px;
+}
+
+.share-links {
+  margin-top: 14px;
+  float: right;
+}
+.share-links a {
+  float: right;
+}
