@@ -1,0 +1,341 @@
+/*
+Design by Metamorphosis Design
+http://www.metamorphozis.com
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+*
+{
+margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+img
+{
+border: 0px;
+}
+
+.field_with_errors textarea, .field_with_errors input {
+  border: 1px solid red;
+}
+
+
+a{
+	color: #711419;
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: #000000;
+}
+
+body{
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #000000;
+	background: #000000;
+	line-height:20px;
+}
+
+
+#main{
+	width: 1000px;
+	margin: 0px auto;
+	padding: 0px 0px 0px 0px;
+	background:#000000;
+	background: url(../images/top.jpg) top left no-repeat;
+	border-left: 1px solid #C0D3DA;
+	border-right: 1px solid #C0D3DA;
+	
+}
+
+
+#header { width:1002px;
+padding: 0px 0px 0px 0px;
+height: 368px;
+}
+
+#buttons{
+	width: 1000px;
+	text-align:center;
+	height:145px;
+	margin-right:3px;
+}
+
+#buttons .but1 {
+	float:left;
+	background: url(../images/but.jpg) center no-repeat;
+	height:82px;
+	margin-top: 15px;
+	margin-right:3px;
+}
+
+#buttons .but2 {
+	float:left;
+	background: url(../images/but.jpg) center no-repeat;
+	height:82px;
+	margin-top: 30px;
+	margin-right:3px;
+}
+
+#buttons .but3 {
+	float:left;
+	background: url(../images/but.jpg) center no-repeat;
+	height:82px;
+	margin-top: 45px;
+	margin-right:3px;
+}
+
+#buttons .but4 {
+	float:left;
+	background: url(../images/but.jpg) center no-repeat;
+	height:82px;
+	margin-top: 0px;
+	margin-right:3px;
+}
+
+#buttons .but5 {
+	float:left;
+	background: url(../images/but.jpg) center no-repeat;
+	height:82px;
+	margin-top: 34px;
+	margin-right:3px;
+}
+
+#buttons a {
+	font-family: Georgia, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight:bold;
+	display: block;
+	float: left;
+	width: 147px;
+	height: 49px;
+	text-decoration: none;
+	color: #07233E;
+	padding-top: 33px;
+	text-align: center;
+	margin-right: 0px;
+}
+
+#buttons a:hover {
+	text-decoration: underline;
+}
+
+#logo{
+	background: url(../images/logo.jpg) center top no-repeat;
+	height: 284px;
+	padding: 25px 0px 0px 796px;
+}
+
+#logo a {
+	text-decoration: none;
+	text-transform: lowercase;
+	font-style: italic;
+	font-size: 16px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+
+#logo H3 a{
+	font-size: 10px;
+	background:none;
+}
+
+#bg_top {
+	background: url(../images/bg_top.jpg) left top no-repeat;	
+	height:304px;
+	width:317px;
+	float:left;}
+	
+#text_top {
+	color:#000000;
+	width:234px;
+	margin: 11px 0px 0px 19px;}
+
+
+#cont_out { 
+	width:978px;
+	padding: 11px;
+}
+
+#content{
+	width: 965px;
+	padding: 7px 6px 7px 6px;
+	background: #FFFFFF;
+}
+
+#left{
+	width: 247px;
+	padding: 4px;
+	margin: 0px;
+	float:left;
+	background: url(../images/left.jpg) top repeat-x;
+	min-height: 590px;
+}
+
+#left .element
+{
+	list-style: none;
+	padding-left: 37px;
+	padding-top: 5px;
+	margin: 0px;
+	display:block;
+	background: url(../images/fish_left.png) 9px 6px no-repeat;
+}
+
+input, textarea
+{
+	width: 200px;
+	font:  Arial, Helvetica, sans-serif;
+}
+textarea {
+	font-size: 10px;
+}
+
+input {
+	color: #1C4461;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+input.submit {
+	background-color: inherit;
+	border: 1px inline navy;
+}
+
+.date input
+{
+	width: 100px;
+	text-decoration: underline;
+}
+
+.list {	
+	padding: 16px 5px 0px 0px;
+}
+
+#center{float:left;
+padding: 13px 0px 0px 0px;
+width:443px;
+margin: 0px 0px 0px 6px;
+}
+
+.text{
+	padding: 10px 0px 0px 0px;
+}
+
+.img {	float:left;
+		margin: 2px 17px 5px 0px;
+}
+
+span {
+  color:#1C4461;
+  font-weight:bold;
+  display: block;
+}
+
+span.clicked {
+  color: #AAA;
+  font-weight:normal;
+  display: inline;
+}
+
+.color { color:#3774A0;}
+
+.date { text-decoration:underline;}
+
+H1{
+	font-family: Georgia, Arial, Helvetica, sans-serif;
+	font-size:18px;
+	font-weight:normal;
+	color: #FFFFFF;
+	height: 34px;
+	padding-left: 0px;
+	padding-top: 14px;
+	text-align:center;
+	background:url(../images/tit.jpg) center top no-repeat;
+}
+
+H2{
+	font-family: Georgia, Arial, Helvetica, sans-serif;
+	font-size:18px;
+	font-weight:normal;
+	color: #1C4461;
+	padding-bottom: 10px;
+	padding-left: 4px;
+	padding-top: 5px;
+	text-align:left;
+	background:url(../images/tit_cent.gif) bottom repeat-x;
+}
+
+.read{
+	text-align:right;
+	padding-right:5px;
+	padding-top: 4px;
+}
+.read_top{
+	text-align:right;
+	padding-right:30px;
+	padding-top: 10px;
+}
+
+.right{
+	float:right;
+	width: 247px;
+	padding: 4px;
+	margin: 0px;
+	background: url(../images/right.jpg) top repeat-x;
+	min-height: 260px;
+}
+
+
+
+.right ul 
+{
+	list-style: none;
+	padding-left:0px;
+	padding-top:0px;
+	margin: 0px;
+	display:block;
+	padding-bottom: 0px;
+}
+
+.right li{
+	padding-top: 5px;
+	background: url(../images/fish_right.png) 10px 13px no-repeat;
+	padding-left: 38px;
+}
+.right li.today {
+	background: url(../images/decor_fish_right.png) 10px 13px no-repeat;
+}
+.right li.add{
+	background: none;
+}
+
+#footer{
+	height: 45px;
+	width: 1000px;
+	font-size: 10px;
+	color: #FFFFFF;
+	padding-top: 8px;
+	text-align: center;
+	clear:both;
+	padding: 10px 0px 10px 0px;
+	background: url(../images/footer.jpg) left top repeat-x;
+}
+
+#footer a{
+	color: #FFFFFF;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+#footer a:hover{
+	color: #FFFFFF;
+	font-size: 10px;
+	text-decoration: underline;
+}
+
