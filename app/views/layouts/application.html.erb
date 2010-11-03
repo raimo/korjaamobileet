@@ -6,14 +6,14 @@
     <meta name="keywords" content="Korjaamo, bileet, baari" />
     <meta name="description" content="Korjaamo-baarin fanisivut" />
     <%= stylesheet_link_tag 'jquery.datepick' %>
-    <%= stylesheet_link_tag 'jquery.jgrowl' %>
-    <%= stylesheet_link_tag 'main', 'tellajoke' %>
+    <%= stylesheet_link_tag 'main', 'tellajoke', 'jquery.jgrowl', 'scaffold' %>
     <%= javascript_include_tag 'jquery-1.4.2.min' %>
     <%= javascript_include_tag 'jquery-ui-1.8rc3.custom.min' %>
     <%= javascript_include_tag 'jquery.datepick', 'jquery.datepick-fi' %>
     <%= javascript_include_tag 'jquery.jgrowl' %>
     <%= javascript_include_tag 'jquery.autogrow-textarea' %>
     <%= javascript_include_tag 'jquery.placeholder' %>
+    <%= javascript_include_tag 'vote_circle' %>
     <%= javascript_include_tag 'application' %>
 
 
@@ -24,11 +24,11 @@
       <!-- header begins -->
       <div id="header">
 	<div id="buttons">
-	  <div class="but1"><a href="/leet" class="razd_but"  title="">Korjaamobileet</a></div>
-	  <div class="but2"><a href="#news" class="razd_but" title="">Uutiset</a></div>
-	  <div class="but3"><a href="#hotlinks" class="razd_but" title="">Pikalinkit</a></div>
+          <div class="but1"><%= link_to('Korjaamobileet', root_path) %></div>
+          <div class="but2"><%= link_to('Uutiset', root_path(:anchor => 'news')) %></div>
+          <div class="but3"><%= link_to('Pikalinkit', root_path(:anchor => 'hotlinks')) %></div>
           <div class="but4"><%= link_to('Vitsit', jokes_path) %></div>
-	  <div class="but5"><a href="#taxi"  class="razd_but" title="">Taksi</a></div>
+          <div class="but5"><%= link_to('Taksi', root_path(:anchor => 'taxi')) %></div>
 	</div>
       </div>
       <!-- header ends -->

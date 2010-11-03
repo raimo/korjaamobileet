@@ -233,9 +233,11 @@ margin: 0px 0px 0px 6px;
 
 span {
   color:#1C4461;
-  font-weight:bold;
-  display: block;
 }
+span.color {
+  font-weight:bold;
+  display:block;
+  color:#3774A0;}
 
 span.clicked {
   color: #AAA;
@@ -243,11 +245,10 @@ span.clicked {
   display: inline;
 }
 
-.color { color:#3774A0;}
 
 .date { text-decoration:underline;}
 
-H1{
+H1.box{
 	font-family: Georgia, Arial, Helvetica, sans-serif;
 	font-size:18px;
 	font-weight:normal;
