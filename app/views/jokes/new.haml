@@ -13,7 +13,7 @@
       %strong
         = current_teller
     .field
-      = f.text_area :body, :rows => 3, :cols => 100, :placeholder => 'Write your joke here'
+      = f.text_area :body, :rows => 3, :cols => 100, :placeholder => 'Write your joke here', :class => 'growing'
     .clear
   .controls
     = f.submit('Send', :class => 'button half')

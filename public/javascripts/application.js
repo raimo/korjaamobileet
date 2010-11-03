@@ -4,7 +4,7 @@ $.ajaxSetup({
 
 $(document).ready(function(){
 
-  $('textarea').autogrow();
+  $('textarea.growing').autogrow();
   $('input[placeholder],textarea[placeholder]').placeholder();
 
   $(".razd_but").click(function () {
@@ -39,7 +39,7 @@ $(document).ready(function(){
   $.fn.editable_list = function (options) {
     return this.each(function () {
       var container = this;
-      var controls = $(container).children('.controls:first');
+      var controls = $(container).children('.list-controls:first');
       var elements = $(container).children('.elements:first');
       var add_form = $(container).children('.add_form:first');
 
