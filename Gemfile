@@ -14,4 +14,3 @@ gem 'haml'
 gem 'koala'
 gem 'passenger'
 
-gem 'failurous-rails', :git => 'git://github.com/railsrumble/rr10-team-256.git'
