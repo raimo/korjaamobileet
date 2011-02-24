@@ -5,10 +5,10 @@ class HotLinksController < ApplicationController
     render :partial => 'index'
   end
 
-	def new
+  def new
     @hot_link = HotLink.new
     render :partial => 'new', :layout => 'ajax'
-	end
+  end
 
   def create
     @hot_link = HotLink.new(params[:hot_link])
