@@ -1,5 +1,5 @@
 set :application, "korjaamobileet"
-set :repository,  "git://github.com/raimo-t/korjaamobileet.git"
+set :repository,  "git://github.com/raimo/korjaamobileet.git"
 set :scm, :git
 set :git_enable_submodules, 1
 
