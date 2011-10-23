@@ -1,3 +1,8 @@
+$:.unshift(File.expand_path('./lib', ENV['rvm_path'])) # Add RVM's lib directory to the load path.
+require "rvm/capistrano"
+set :rvm_ruby_string, File.new('.rvmrc').read.split(' ').find{|s|s.include?('@')}
+set :rvm_type, :user
+
 set :application, "korjaamobileet"
 set :repository,  "git://github.com/raimo/korjaamobileet.git"
 set :scm, :git
