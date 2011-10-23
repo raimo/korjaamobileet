@@ -15,5 +15,4 @@ gem 'koala'
 gem 'passenger'
 gem 'jruby-openssl'
 gem 'warbler'
-gem 'ffi-ncurses'
 
