@@ -1,9 +1,6 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.0'
-group :production do
-  gem 'activerecord-jdbcpostgresql-adapter'
-end
 gem 'json'
 gem 'jquery-rails'
 gem 'capistrano'
@@ -12,6 +9,9 @@ gem 'koala'
 gem 'jruby-openssl'
 gem 'warbler'
 gem 'ffi-ncurses'
+group :production do
+  gem 'activerecord-jdbcpostgresql-adapter'
+end
 group :development do
   gem 'thin'
   gem 'pg'
