@@ -9,33 +9,41 @@ set :use_sudo, false
 set :deploy_to, "/home/users/raimo/#{application}"
 set :group_writable, false
 
-set :pid, "#{current_path}/tmp/pids/passenger.31010.pid"
-set :bundle, "(cd #{current_path} && bundle check || bundle install)"
-set :cmd, "(cd #{current_path} && bundle exec passenger start -d -p 31010 -e production)"
+set :rails_env, "production"
+set :startcmd, "CATALINA_PID=tomcat.pid tomcat/bin/startup.sh;"
+set :stopcmd, "CATALINA_PID=tomcat.pid tomcat/bin/shutdown.sh -force;"
 
 role :app, "kirsikka.kapsi.fi"
 role :web, "kirsikka.kapsi.fi"
 role :db,  "kirsikka.kapsi.fi", :primary => true
 
 namespace :deploy do
-  task :stop do
-    run("test -s '#{pid}' && kill -QUIT `cat '#{pid}'`")
-  end
 
-  task :restart do
-    run("#{bundle} && touch #{current_path}/tmp/restart.txt")
+  task :warble do
+    run "cd #{release_path};warble RAILS_ENV=#{rails_env}"
+    run "rm -rf tomcat/webapps/#{application} tomcat/webapps/#{application}.war"
+    run "mv #{release_path}/#{application}.war tomcat/webapps"
   end
 
   task :start do
-    run("#{bundle} && (test -s '#{pid}' && kill -0 `cat '#{pid}'`) || #{cmd}")
+    run startcmd
   end
-end
+ 
+  task :stop do
+    run stopcmd
+  end
 
-namespace :customs do
+  task :restart do
+    run stopcmd+startcmd
+  end
+
+  task :bundle do
+    run "cd #{release_path} && bundle"
+  end
+
   task :config do
     run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
   end
 end
 
-after "deploy:update_code", "customs:config"
-
+after 'deploy:update_code', 'deploy:config', 'deploy:bundle', 'deploy:warble'
