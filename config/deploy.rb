@@ -21,8 +21,8 @@ namespace :deploy do
 
   task :warble do
     run "cd #{release_path};warble RAILS_ENV=#{rails_env}"
-    run "rm -rf tomcat/webapps/#{application} tomcat/webapps/#{application}.war"
-    run "mv #{release_path}/#{application}.war tomcat/webapps"
+    run "rm -rf tomcat/webapps/leet tomcat/webapps/leet.war"
+    run "mv #{release_path}/leet.war tomcat/webapps"
   end
 
   task :start do
