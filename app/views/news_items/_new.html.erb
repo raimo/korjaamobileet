@@ -1,5 +1,5 @@
 <div class="element">
-  <% form_for(@news_item) do |f| %>
+  <%= form_for(@news_item) do |f| %>
     <span class="date"> <%= f.text_field :when %> </span>
     <span>  <%= f.text_field :title %> </span>
     <p> <%= f.text_area :body, :rows => 5 %> </p>

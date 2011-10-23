@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0'
+gem 'rails', '3.1.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -13,4 +13,7 @@ gem 'pg'
 gem 'haml'
 gem 'koala'
 gem 'passenger'
+gem 'jruby-openssl'
+gem 'warbler'
+gem 'ffi-ncurses'
 
