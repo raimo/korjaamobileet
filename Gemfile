@@ -7,7 +7,6 @@ end
 gem 'json'
 gem 'jquery-rails'
 gem 'capistrano'
-gem 'pg'
 gem 'haml'
 gem 'koala'
 gem 'jruby-openssl'
@@ -15,5 +14,6 @@ gem 'warbler'
 gem 'ffi-ncurses'
 group :development do
   gem 'thin'
+  gem 'pg'
 end
 
