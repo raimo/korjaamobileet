@@ -6,14 +6,13 @@ gem 'jquery-rails'
 gem 'capistrano'
 gem 'haml'
 gem 'koala'
-gem 'jruby-openssl'
 gem 'warbler'
 gem 'ffi-ncurses'
+gem 'pg'
 group :production do
-  gem 'activerecord-jdbcpostgresql-adapter'
+  gem 'passenger'
 end
 group :development do
   gem 'thin'
-  gem 'pg'
 end
 
