@@ -17,7 +17,7 @@ set :group_writable, false
 
 set :pid, "#{current_path}/tmp/pids/passenger.31010.pid"
 set :bundle, "(cd #{current_path}; bundle)"
-set :cmd, "(cd #{current_path}; bundle exec passenger start -d -p 31010 -e production)"
+set :cmd, "(cd #{current_path}; bundle exec passenger start -d -p 31010 -e production #{current_path})"
 
 role :app, "kirsikka.kapsi.fi"
 role :web, "kirsikka.kapsi.fi"
