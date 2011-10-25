@@ -89,13 +89,13 @@ div {
   outline: none;
 }
 .joke-item .image {
-  background-image: url(/images/circle.png);
+  background-image: url(../images/circle.png);
   height: 42px;
   width: 42px;
   float:left;
 }
 .joke-item .image:hover {
-  background-image: url(/images/circle_yellow.png);
+  background-image: url(../images/circle_yellow.png);
   cursor: pointer;
 }
 .joke-item a, .joke-list .joke-item a:visited {
@@ -231,7 +231,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 /* tooltip styling */
 .tooltip {
   display:none;
-  background:url(/images/tooltip.png);
+  background:url(../images/tooltip.png);
   padding:4px 3px 1px 3px;
   height:20px;
   width:82px;
