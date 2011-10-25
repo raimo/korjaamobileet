@@ -25,7 +25,7 @@ role :db,  "kirsikka.kapsi.fi", :primary => true
 
 namespace :deploy do
   task :stop do
-    run("test -s '#{pid}' && kill -QUIT `cat '#{pid}'`")
+    run("(cd #{current_path}; bundle exec passenger stop -p 31010 #{current_path})")
   end
 
   task :restart do
